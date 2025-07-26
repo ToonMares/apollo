@@ -4,14 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Apollo</title>
-
+    <link rel="icon" type="image/png" href="apollo.png" />
     <script src="https://cdn.tailwindcss.com"></script>
-
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
-
     <script>
       tailwind.config = {
         theme: {
@@ -48,7 +45,6 @@
         },
       };
     </script>
-
     <style>
       #loader {
         position: fixed;
@@ -64,12 +60,10 @@
         z-index: 50;
         transition: opacity 0.8s ease-out;
       }
-
       #loader.hidden {
         opacity: 0;
         pointer-events: none;
       }
-
       .glass {
         background: rgba(255, 255, 255, 0.1);
         backdrop-filter: blur(20px);
@@ -77,12 +71,10 @@
         border: 1px solid rgba(255, 255, 255, 0.15);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
       }
-
       .glass:hover {
         box-shadow: 0 10px 40px rgba(124, 58, 237, 0.3);
         transform: translateY(-4px);
       }
-
       #particles-js {
         position: fixed;
         width: 100%;
@@ -92,32 +84,25 @@
         left: 0;
         pointer-events: none;
       }
-
       .gradient-text {
         background: linear-gradient(90deg, #7c3aed, #3b82f6);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
-
       .btn-glow {
         transition: box-shadow 0.3s ease;
       }
-
       .btn-glow:hover {
         box-shadow: 0 0 25px rgba(124, 58, 237, 0.6);
       }
     </style>
   </head>
-
   <body class="bg-apollo-dark text-gray-100 font-sans relative overflow-x-hidden">
-
     <div id="particles-js"></div>
-
     <div id="loader">
       <div class="w-14 h-14 border-4 border-apollo-purple border-t-transparent rounded-full animate-spinSlow mb-4"></div>
       <p class="text-gray-300 text-xl font-medium">Launching Apollo...</p>
     </div>
-
     <header class="bg-apollo-dark border-b border-gray-700 shadow-glow fixed w-full z-20">
       <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         <img src="apollo.png" alt="Apollo Logo" class="h-14 w-auto" />
@@ -125,15 +110,14 @@
           <a href="index.html" class="text-gray-300 hover:text-apollo-purple transition font-medium">Home</a>
           <a href="#features" class="text-gray-300 hover:text-apollo-purple transition font-medium">Features</a>
           <a href="#news" class="text-gray-300 hover:text-apollo-purple transition font-medium">News</a>
-          <a href="#download" class="text-gray-300 hover:text-apollo-purple transition font-medium">Download</a>
+          <a href="#download" class="text-gray-300 hover:text-apollo-purple transition font-medium">Downloads</a>
         </nav>
       </div>
     </header>
-
     <section class="text-center pt-32 pb-20 px-6 bg-gradient-to-b from-apollo-dark to-gray-900 relative z-10">
       <h2 class="text-5xl md:text-6xl font-extrabold mb-6 gradient-text" data-aos="fade-up">Welcome to Apollo</h2>
       <p class="text-gray-300 max-w-3xl mx-auto text-lg md:text-xl leading-relaxed" data-aos="fade-up" data-aos-delay="100">
-        Relive the thrill of Fortnite Chapter 2 Season 4 with iconic mythic weapons, legendary bosses, and all your favorite locations, perfectly recreated.
+        Experience Fortnite Chapter 2 Season 4 with all the mythic weapons, boss fights, and OG locations.
       </p>
       <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
         <a
@@ -151,71 +135,68 @@
         </a>
       </div>
     </section>
-
     <section id="features" class="max-w-7xl mx-auto px-6 pt-12 pb-20 relative z-10">
-      <h3 class="text-4xl font-bold mb-16 text-center gradient-text" data-aos="fade-up">What Awaits You in Apollo</h3>
+      <h3 class="text-4xl font-bold mb-16 text-center gradient-text" data-aos="fade-up">What's in Apollo</h3>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="glass p-8 rounded-2xl shadow-glow hover:scale-[1.03] transition" data-aos="fade-up">
           <h4 class="text-2xl font-semibold mb-3 text-apollo-purple">Solo & Arena Modes</h4>
           <p class="text-gray-300 leading-relaxed">
-            Dive into classic solo matches or test your skills in competitive Arena, featuring authentic Chapter 2 loot and mechanics.
+            Play solo or compete in Arena with Chapter 2 weapons and gameplay.
           </p>
         </div>
         <div class="glass p-8 rounded-2xl shadow-glow hover:scale-[1.03] transition" data-aos="fade-up" data-aos-delay="100">
           <h4 class="text-2xl font-semibold mb-3 text-apollo-purple">Late Game Action</h4>
           <p class="text-gray-300 leading-relaxed">
-            Jump directly into intense endgame battles with full loadouts, abundant materials, and fast-moving storm zones.
+            Drop into endgame battles with full loadouts, plenty of materials, and dynamic storm zones.
           </p>
         </div>
         <div class="glass p-8 rounded-2xl shadow-glow hover:scale-[1.03] transition" data-aos="fade-up" data-aos-delay="200">
           <h4 class="text-2xl font-semibold mb-3 text-apollo-purple">Epic Boss Fights</h4>
           <p class="text-gray-300 leading-relaxed">
-            Challenge Doctor Doom, Iron Man, and other bosses to earn their iconic mythic weapons, faithfully recreated for epic showdowns.
+            Take on Doctor Doom, Iron Man, and other bosses to claim their mythic weapons.
           </p>
         </div>
         <div class="glass p-8 rounded-2xl shadow-glow hover:scale-[1.03] transition" data-aos="fade-up" data-aos-delay="300">
           <h4 class="text-2xl font-semibold mb-3 text-apollo-purple">Progression System</h4>
           <p class="text-gray-300 leading-relaxed">
-            Earn XP naturally through gameplay, with a fully functional progression system tied to your account for seamless leveling.
+            Earn XP through gameplay with a working progression system tied to your account.
           </p>
         </div>
         <div class="glass p-8 rounded-2xl shadow-glow hover:scale-[1.03] transition" data-aos="fade-up" data-aos-delay="400">
           <h4 class="text-2xl font-semibold mb-3 text-apollo-purple">Exclusive Cosmetics</h4>
           <p class="text-gray-300 leading-relaxed">
-            Unlock unique Apollo cosmetics, including emotes and outfits, to showcase your style and legacy in every match.
+            Shop the Apollo Series for custom cosmetics, including unique emotes and outfits, to stand out in every match.
           </p>
         </div>
         <div class="glass p-8 rounded-2xl shadow-glow hover:scale-[1.03] transition" data-aos="fade-up" data-aos-delay="500">
-          <h4 class="text-2xl font-semibold mb-3 text-apollo-purple">Tournaments & Events</h4>
+          <h4 class="text-2xl font-semibold mb-3 text-apollo-purple">Competitive Tournaments</h4>
           <p class="text-gray-300 leading-relaxed">
-            Compete in exciting V-Bucks Cups and leaderboard challenges, with rewards and bragging rights up for grabs.
+            Compete in ranked tournaments for prizes like V-Bucks and exclusive rewards, showcasing your skills on the leaderboard.
           </p>
         </div>
       </div>
     </section>
-
     <section id="news" class="bg-gray-900 py-20 px-6 relative z-10">
       <div class="max-w-6xl mx-auto flex flex-col lg:flex-row gap-12 items-center" data-aos="fade-up">
         <img src="ch2s4.png" alt="Chapter 2 Season 4" class="w-full lg:w-1/2 rounded-2xl shadow-glow" />
         <div>
           <h3 class="text-4xl font-bold mb-6 gradient-text">Latest Updates</h3>
           <p class="text-gray-300 mb-4 leading-relaxed">
-            Fortnite Chapter 2 Season 4 is fully live on Apollo! Explore the iconic map, including Stark Industries and Doom’s Domain, with every POI meticulously restored. All mythic weapons, like Iron Man’s Repulsors and Doom’s Arcane Bomb, are ready for action.
+            Fortnite Chapter 2 Season 4 is live on Apollo! Drop into locations like Stark Industries and Doom’s Domain, and use mythic weapons like Iron Man’s Repulsors and Doom’s Arcane Bomb.
           </p>
           <p class="text-gray-300 leading-relaxed">
-            Recent updates include improved matchmaking, optimized performance, and a rebalanced XP system, ensuring a smooth experience for casual and competitive players alike.
+            Recent updates bring better matchmaking, improved performance, and a tweaked XP system for both casual and competitive players.
           </p>
         </div>
       </div>
     </section>
-
     <section id="download" class="max-w-7xl mx-auto px-6 py-20 relative z-10">
       <h3 class="text-4xl font-bold mb-16 text-center gradient-text" data-aos="fade-up">Download Apollo</h3>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-3xl mx-auto">
         <div class="glass p-8 rounded-2xl shadow-glow hover:scale-[1.03] transition" data-aos="fade-up" data-aos-delay="100">
           <h4 class="text-2xl font-semibold mb-3 text-apollo-purple">Apollo Launcher</h4>
           <p class="text-gray-300 mb-6 leading-relaxed">
-            Get the official Apollo Launcher to start your Chapter 2 Season 4 adventure. Available through our Discord community.
+            Get the Apollo Launcher to start your Chapter 2 Season 4 adventure via our Discord.
           </p>
           <a
             href="https://discord.com/channels/1345358719071813664/1348302107509395517"
@@ -228,7 +209,7 @@
         <div class="glass p-8 rounded-2xl shadow-glow hover:scale-[1.03] transition" data-aos="fade-up" data-aos-delay="200">
           <h4 class="text-2xl font-semibold mb-3 text-apollo-purple">Version 14.40</h4>
           <p class="text-gray-300 mb-6 leading-relaxed">
-            Download version 14.40 to experience the full Chapter 2 Season 4 content, including all mythic weapons and POIs.
+            Download version 14.40 to play Chapter 2 Season 4 with all its content, including mythic weapons and locations.
           </p>
           <a
             href="https://public.simplyblk.xyz/14.40.rar"
@@ -240,14 +221,12 @@
         </div>
       </div>
     </section>
-
     <footer class="text-center py-10 text-sm text-gray-500 bg-gray-900 border-t border-gray-800 relative z-10">
       &copy; Apollo 2025. All rights reserved.
       <div class="text-xs mt-6 max-w-3xl mx-auto px-4 text-gray-600 leading-relaxed">
-        Apollo is an independent community project and is not affiliated with, authorized, sponsored, or endorsed by Epic Games, Inc. or Fortnite. All Fortnite assets, trademarks, logos, and names are the property of Epic Games, Inc. and their respective owners. This site uses Fortnite-related content solely for reference and is not officially supported or approved by Epic Games or its partners.
+        Apollo is an independent community project not affiliated with, authorized, sponsored, or endorsed by Epic Games, Inc. or Fortnite. All Fortnite assets, trademarks, logos, and names are the property of Epic Games, Inc. and their respective owners. This site references Fortnite content for illustrative purposes and is not officially supported or approved by Epic Games or its partners.
       </div>
     </footer>
-
     <script>
       window.addEventListener('load', () => {
         setTimeout(() => {
@@ -255,7 +234,6 @@
           AOS.init({ duration: 1000, easing: 'ease-out-cubic', once: true });
         }, 600);
       });
-
       tsParticles.load("particles-js", {
         fullScreen: { enable: false },
         particles: {
